@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background: hsl(233, 47%, 7%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container > .main-card{
+    width: 60vw;
+    height: 47vh;
+    display: flex;
+    
+    /* border: 2px solid white; */
+}
+
+.container .main-card > .left-card{
+    /* height: 30vh; */
+    width: 600px;
+    background:  hsl(244, 38%, 16%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.container .main-card .left-card > .heading{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    padding-left: 30px;
+    line-height: 1.5rem;
+}
+
+.container .main-card .left-card .heading > .get, .that, .your{
+    color:  hsl(0, 0%, 100%);
+    font-size: 2rem;
+}
+
+.container .main-card .left-card .heading > .insight{
+    color:  hsl(277, 64%, 61%);
+    font-size: 2rem;
+}
+
+.container .main-card .left-card > .info{
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5rem;
+    padding-left: 30px;
+    /* font-size: 15px; */
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.container .main-card .left-card > .stats{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+
+.container .main-card .left-card .stats > .comp , .template, .queries{
+    display: flex;
+    flex-direction: column;
+}
+
+.container .main-card .left-card .stats .comp > .ten, .three, .twelve{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.container .main-card .left-card .stats .comp > .com, .temp, .que{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.container .main-card .right-card > img{
+    filter: opacity(0.4) drop-shadow(0 0 0 hsl(277, 64%, 61%));
+    height: 47vh;
+    border-radius: 0px 10px 10px 0px;
+}
